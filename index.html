@@ -17,7 +17,7 @@
   .header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 32px 40px; border-radius: 12px; margin-bottom: 24px; }
   .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
   .header .sub { font-size: 13px; opacity: 0.85; }
-  .header .meta { display: flex; gap: 20px; margin-top: 12px; font-size: 12px; opacity: 0.7; }
+  .header .meta { display: flex; gap: 20px; margin-top: 12px; font-size: 12px; opacity: 0.7; flex-wrap: wrap; }
   .section { background: var(--card-bg); border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border: 1px solid var(--border); }
   .section-title { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid var(--primary-light); padding-bottom: 10px; }
   .theme-line { font-size: 13px; color: var(--primary-light); font-style: italic; margin-bottom: 14px; padding: 8px 12px; background: #eaf2f8; border-radius: 6px; border-left: 3px solid var(--primary-light); }
@@ -37,9 +37,6 @@
   .news-item:last-child { border-bottom: none; }
   .news-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
   .news-meta { font-size: 11px; color: var(--text-light); }
-  .source-tag { font-size: 10px; padding: 1px 6px; border-radius: 3px; background: #f0f4f8; color: var(--primary); }
-  .verify-ok { color: var(--green); font-weight: 600; }
-  .verify-warn { color: var(--accent); font-weight: 600; }
   .up { color: #e74c3c; font-weight: 600; }
   .down { color: #27ae60; font-weight: 600; }
   .flat { color: #7f8c8d; font-weight: 600; }
@@ -53,6 +50,7 @@
   .risk-none { padding: 16px; text-align: center; color: var(--green); font-weight: 600; background: #e8f8f0; border-radius: 8px; }
   .trend-table td { font-size: 12px; }
   .stars { color: #f39c12; }
+  .data-source { font-size: 11px; color: var(--text-light); margin-top: 8px; padding: 6px 10px; background: #f8f9fa; border-radius: 4px; border-left: 2px solid var(--primary-light); }
 </style>
 </head>
 <body>
@@ -75,13 +73,13 @@
     <tr><th>维度</th><th>核心要点</th><th>信号</th></tr>
     <tr><td>集团环境</td><td>摩根大通下调海尔智家H股目标价至25港元，维持增持；美的发布"出海合伙人计划"及"智能体工厂出海方案"，全球化战略加速</td><td><span class="signal signal-yellow"></span></td></tr>
     <tr><td>产业动态</td><td>国家药监局发布《医疗器械生产质量管理规范检查指导原则》征求意见稿，行业监管趋严；AI医疗领域融资活跃</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>核心资产</td><td>海尔生物-4.03%领跌，但AI战略加速落地（AI收入占比15%）；盈康生命-1.94%，携手华为云共建肿瘤AI全周期平台；上海莱士-0.99%，大宗交易溢价9.78%</td><td><span class="signal signal-yellow"></span></td></tr>
+    <tr><td>核心资产</td><td>海尔生物-4.03%领跌，AI收入占比升至15%；盈康生命-1.94%（市值68.79亿），携手华为云共建肿瘤AI全周期平台；上海莱士-0.99%（市值330.29亿），大宗交易溢价9.78%</td><td><span class="signal signal-yellow"></span></td></tr>
     <tr><td>风险预警</td><td>今日无新增重大风险事件，品牌声誉整体稳定</td><td><span class="signal signal-green"></span></td></tr>
-    <tr><td>趋势关注</td><td>AI+医疗加速渗透：海尔生物AI收入占比升至15%、盈康生命联手华为云、迈瑞系并购整合深化，AI成为医疗器械核心竞争维度</td><td><span class="signal signal-green"></span></td></tr>
+    <tr><td>趋势关注</td><td>AI+医疗加速渗透：海尔生物AI收入占比升至15%、盈康生命联手华为云、迈瑞系并购整合深化</td><td><span class="signal signal-green"></span></td></tr>
   </table>
 </div>
 
-<!-- Module 1: Group Strategy -->
+<!-- Module 1 -->
 <div class="section">
   <div class="section-title">一、集团战略环境监控</div>
   <div class="theme-line">本日主线：家电巨头全球化加速，美的发布出海新战略，海尔智家获大行"增持"维持，AI赋能制造业成共识</div>
@@ -89,19 +87,19 @@
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-yellow"></span>摩根大通下调海尔智家H股目标价至25港元，维持"增持"评级</div>
     <p>摩根大通认为海尔智家不应再以国内家电周期估值，而应视为"现金牛收益+全球挑战者成长+工业科技期权"组合。美国关税压力已充分反映，海外核心业务健康增长，预计2026-2028年净利润CAGR约8%，2026年预测PE仅8-9倍，总股东回报率10-11%。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 腾讯新闻/证券之星 | 信源等级：B级（主流财经媒体/券商研报）</div>
+    <div class="news-meta">📅 2026-06-10 | 📰 腾讯新闻/证券之星 | 信源等级：B级</div>
   </div>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-yellow"></span>美的集团发布"出海合伙人计划"和"智能体工厂出海解决方案"</div>
     <p>美的集团正式推出"出海合伙人计划"，同步发布"智能体工厂出海解决方案"，将AI智能体技术与全球化制造深度融合，标志着美的从产品出海向技术+模式出海升级。</p>
-    <div class="news-meta">📅 2026-06-09 | 📰 上海证券报 | 信源等级：A级（权威财经媒体）</div>
+    <div class="news-meta">📅 2026-06-09 | 📰 上海证券报 | 信源等级：A级</div>
   </div>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-green"></span>2026年智能空调产业竞争格局：海尔联合科大讯飞推出"语音AI空调"</div>
-    <p>中研普华报告显示AI智能空调渗透率已近30%。格力、美的、海尔、奥克斯、TCL五大品牌占国内市场近八成。海尔联合科大讯飞推出"语音AI空调"强化场景交互，传统品牌加速智能化反击。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 中研网 | 信源等级：C级（行业研究机构）</div>
+    <p>中研普华报告显示AI智能空调渗透率已近30%。格力、美的、海尔、奥克斯、TCL五大品牌占国内市场近八成。海尔联合科大讯飞推出"语音AI空调"强化场景交互。</p>
+    <div class="news-meta">📅 2026-06-10 | 📰 中研网 | 信源等级：C级</div>
   </div>
 
   <div class="news-item">
@@ -116,7 +114,7 @@
   </div>
 </div>
 
-<!-- Module 2: Industry Dynamics -->
+<!-- Module 2 -->
 <div class="section">
   <div class="section-title">二、产业动态</div>
   <div class="theme-line">本日主线：AI+医疗加速渗透，器械监管趋严，迈瑞系并购整合成效显现</div>
@@ -126,72 +124,65 @@
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-yellow"></span>国家药监局发布《医疗器械生产质量管理规范检查指导原则》征求意见稿</div>
     <p>药监局就医疗器械生产质量管理规范检查指导原则公开征求意见，进一步细化生产环节监管要求，行业合规门槛提升。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 医药魔方ByDrug | 信源等级：A级（官方发布）</div>
+    <div class="news-meta">📅 2026-06-10 | 📰 医药魔方ByDrug | 信源等级：A级</div>
   </div>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-green"></span>惠泰医疗接受多家机构调研：迈瑞并购后整合成效符合预期</div>
     <p>惠泰医疗(688617)披露6月5日机构调研纪要，Capital Group、Wellington、淡马锡、GIC等14家机构参与。公司表示迈瑞并购后经营管理出现多项积极变化，研发协同成效显著，营销协同处于起步阶段。全年PFA手术量目标及经营计划未调整。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 证券之星 | 信源等级：B级（上市公司公告）</div>
+    <div class="news-meta">📅 2026-06-10 | 📰 证券之星 | 信源等级：B级</div>
   </div>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-green"></span>鱼跃医疗召开2026年第一次临时股东会，各项议案获通过</div>
-    <p>鱼跃医疗(002223)2026年第一次临时股东会于6月9日召开，出席股东代表54.46%表决权，所有议案获通过，未出现否决情形。</p>
-    <div class="news-meta">📅 2026-06-09/10 | 📰 证券时报/中财网 | 信源等级：A级（上市公司公告）</div>
+    <p>鱼跃医疗(002223)2026年第一次临时股东会于6月9日召开，出席股东代表54.46%表决权，所有议案获通过。</p>
+    <div class="news-meta">📅 2026-06-09/10 | 📰 证券时报/中财网 | 信源等级：A级</div>
   </div>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-yellow"></span>AI医疗行业周报：华超神控获经纬创投天使轮，聚焦AI超声脑机技术</div>
-    <p>AI医疗领域融资活跃：华超神控完成天使轮融资（经纬创投），专注AI超声脑机技术研发；博济医药拟定增4.47亿元用于中药创新药研发；微眸医疗获A轮融资，开发眼科手术机器人。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 腾讯新闻 | 信源等级：B级（财经媒体汇总）</div>
+    <p>AI医疗领域融资活跃：华超神控完成天使轮融资（经纬创投），专注AI超声脑机技术研发；博济医药拟定增4.47亿元；微眸医疗获A轮融资，开发眼科手术机器人。</p>
+    <div class="news-meta">📅 2026-06-10 | 📰 腾讯新闻 | 信源等级：B级</div>
   </div>
 
   <h4 style="color:var(--primary);margin:12px 0 8px;">🏥 医疗服务板块</h4>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-new">🆕今日新增</span><span class="signal signal-green"></span>爱尔眼科：瑞士Haag-Streit集团走访上海爱尔，深化国际眼科协作</div>
-    <p>瑞士知名眼科企业Haag-Streit集团CEO到访上海爱尔眼科医院，双方围绕白内障、青光眼、老视等规范化诊疗开展交流，达成多项合作共识。高考后暑期摘镜高峰来临，武汉爱尔延长接诊至晚8点。</p>
-    <div class="news-meta">📅 2026-06-10 | 📰 中华网/腾讯新闻 | 信源等级：B级</div>
+    <p>瑞士知名眼科企业Haag-Streit集团CEO到访上海爱尔眼科医院，双方围绕白内障、青光眼、老视等规范化诊疗开展交流，达成多项合作共识。</p>
+    <div class="news-meta">📅 2026-06-10 | 📰 中华网 | 信源等级：B级</div>
   </div>
 
   <h4 style="color:var(--primary);margin:12px 0 8px;">💉 血液制品板块</h4>
 
   <div class="news-item">
     <div class="news-title"><span class="tag tag-track">🔄持续跟踪</span><span class="signal signal-yellow"></span>威高血净推进发行股份购买威高普瑞100%股权</div>
-    <p>威高血净(603014)更新发行股份购买资产报告书修订稿，审计基准日更新为2025年12月31日，交易尚需上交所审核通过及证监会注册。血液净化领域并购整合持续推进。</p>
-    <div class="news-meta">📅 2026-06-09 | 📰 中财网 | 信源等级：A级（上市公司公告）</div>
+    <p>威高血净(603014)更新发行股份购买资产报告书修订稿，审计基准日更新为2025年12月31日，交易尚需上交所审核通过及证监会注册。</p>
+    <div class="news-meta">📅 2026-06-09 | 📰 中财网 | 信源等级：A级</div>
   </div>
 
   <h4 style="color:var(--primary);margin:12px 0 8px;">📜 政策法规</h4>
 
   <div class="news-item">
-    <div class="news-title"><span class="tag tag-track">🔄持续跟踪</span><span class="signal signal-red"></span>国家卫健委等14部门联合印发《2026年纠正医药购销领域和医疗服务中不正之风工作要点》</div>
-    <p>国家卫健委等14部门（国卫医急函〔2026〕123号）联合发布纠风工作要点，持续深化医药领域腐败问题和不正之风集中整治，强化医德医风建设，规范行业秩序。文件发文日期5月22日，6月10日各地方开始转发执行。</p>
-    <div class="news-meta">📅 2026-05-22发文 / 2026-06-10地方执行 | 📰 网易新闻 | 信源等级：A级（国务院部门发文）</div>
+    <div class="news-title"><span class="tag tag-track">🔄持续跟踪</span><span class="signal signal-red"></span>国家14部门联合印发《2026年纠正医药购销领域和医疗服务中不正之风工作要点》</div>
+    <p>国家卫健委等14部门（国卫医急函〔2026〕123号）联合发布纠风工作要点，持续深化医药领域腐败问题和不正之风集中整治，强化医德医风建设。</p>
+    <div class="news-meta">📅 2026-05-22发文 / 2026-06-10地方执行 | 📰 网易新闻 | 信源等级：A级</div>
   </div>
 </div>
 
-<!-- Module 3: Core Assets -->
+<!-- Module 3 -->
 <div class="section">
   <div class="section-title">三、核心资产跟踪</div>
   <div class="theme-line">整体研判：三大核心标的今日均下跌，海尔生物跌幅最大(-4.03%)，但AI战略落地进展积极；盈康生命携手华为云标志AI战略进入规模化阶段；上海莱士大宗交易溢价值得关注</div>
 
   <h4 style="color:var(--primary);margin:12px 0 8px;">📊 行情总览</h4>
   <table>
-    <tr><th>公司</th><th>收盘价</th><th>涨跌幅</th><th>总市值</th><th>PE(TTM)</th><th>总股本</th></tr>
-    <tr><td><b>海尔生物(688139)</b></td><td>¥26.68</td><td class="down">-4.03%</td><td>84.44亿</td><td>38.39</td><td>3.16亿</td></tr>
-    <tr><td><b>盈康生命(300143)</b></td><td>¥7.07</td><td class="down">-1.94%</td><td>58.94亿</td><td>106.97</td><td>8.34亿</td></tr>
-    <tr><td><b>上海莱士(002252)</b></td><td>¥5.01</td><td class="down">-0.99%</td><td>330.06亿</td><td>24.89</td><td>65.88亿</td></tr>
+    <tr><th>公司</th><th>代码</th><th>收盘价</th><th>涨跌幅</th><th>总股本(亿股)</th><th>计算市值(亿元)</th><th>PE(TTM)</th></tr>
+    <tr><td><b>海尔生物</b></td><td>688139</td><td>¥26.68</td><td class="down">-4.03%</td><td>3.1649</td><td>84.44</td><td>38.39</td></tr>
+    <tr><td><b>盈康生命</b></td><td>300143</td><td>¥7.07</td><td class="down">-1.94%</td><td>9.7293</td><td>68.79</td><td>106.97</td></tr>
+    <tr><td><b>上海莱士</b></td><td>002252</td><td>¥5.01</td><td class="down">-0.99%</td><td>65.9267</td><td>330.29</td><td>24.89</td></tr>
   </table>
-
-  <h4 style="color:var(--primary);margin:16px 0 8px;">✅ 市值一致性校验</h4>
-  <table>
-    <tr><th>公司</th><th>收盘价×总股本</th><th>数据源市值</th><th>偏差</th><th>状态</th></tr>
-    <tr><td>海尔生物</td><td>84.44亿</td><td>84.44亿</td><td>0.0%</td><td class="verify-ok">✅一致</td></tr>
-    <tr><td>盈康生命</td><td>58.94亿</td><td>58.94亿</td><td>0.0%</td><td class="verify-ok">✅一致</td></tr>
-    <tr><td>上海莱士</td><td>330.06亿</td><td>330.06亿</td><td>0.0%</td><td class="verify-ok">✅一致</td></tr>
-  </table>
+  <div class="data-source">收盘价/PE来源：腾讯财经(qt.gtimg.cn) | 总股本来源：东方财富数据中心(datacenter-web.eastmoney.com) | 市值 = 收盘价 × 总股本</div>
 
   <h4 style="color:var(--primary);margin:16px 0 8px;">📋 逐家详情</h4>
   <div class="company-block">
@@ -199,11 +190,12 @@
     <div class="kpi-grid">
       <div class="kpi-row"><span>收盘价</span><span>¥26.68</span></div>
       <div class="kpi-row"><span>涨跌幅</span><span class="down">-4.03%</span></div>
-      <div class="kpi-row"><span>总市值</span><span>84.44亿</span></div>
+      <div class="kpi-row"><span>总股本</span><span>316,492,922股</span></div>
+      <div class="kpi-row"><span>计算市值</span><span>84.44亿</span></div>
       <div class="kpi-row"><span>PE(TTM)</span><span>38.39x</span></div>
-      <div class="kpi-row"><span>总股本</span><span>3.16亿股</span></div>
       <div class="kpi-row"><span>数据日期</span><span>2026-06-10</span></div>
     </div>
+    <div class="data-source">收盘价来源：腾讯财经 | 总股本来源：东方财富数据中心 | 市值=收盘价×总股本</div>
     <p style="font-weight:600;margin:12px 0 6px;font-size:13px;">📰 市场关注</p>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 公司披露"大模型-智能体-智能终端"多层次AI架构，AI收入占比达15%，场景方案订单同比增长超50%<br><span class="news-meta">来源：证券之星 | A级</span></div>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 携手阿里云智能签署《"AI自主实验室"共创生态合作协议》，设立上海自主实验室合作创新工场<br><span class="news-meta">来源：证券之星 | A级</span></div>
@@ -211,22 +203,23 @@
     <p style="font-weight:600;margin:12px 0 6px;font-size:13px;">💡 当前判断</p>
     <div style="font-size:12px;padding:3px 0;">• AI战略从概念验证进入规模化收入阶段，15%收入占比标志着AI已成核心业务驱动力</div>
     <div style="font-size:12px;padding:3px 0;">• 与阿里云、具身智能专委会的生态合作，打开"AI+生命科学"长期增长空间</div>
-    <div style="font-size:12px;padding:3px 0;">• 今日股价下跌4.03%需关注是否为大市系统性回调，还是个股因素</div>
+    <div style="font-size:12px;padding:3px 0;">• 今日股价下跌4.03%需关注是否为大市系统性回调还是个股因素</div>
   </div>
   <div class="company-block">
     <h4>盈康生命（300143） <span class="down" style="font-size:14px">-1.94%</span></h4>
     <div class="kpi-grid">
       <div class="kpi-row"><span>收盘价</span><span>¥7.07</span></div>
       <div class="kpi-row"><span>涨跌幅</span><span class="down">-1.94%</span></div>
-      <div class="kpi-row"><span>总市值</span><span>58.94亿</span></div>
+      <div class="kpi-row"><span>总股本</span><span>972,931,746股</span></div>
+      <div class="kpi-row"><span>计算市值</span><span>68.79亿</span></div>
       <div class="kpi-row"><span>PE(TTM)</span><span>106.97x</span></div>
-      <div class="kpi-row"><span>总股本</span><span>8.34亿股</span></div>
       <div class="kpi-row"><span>数据日期</span><span>2026-06-10</span></div>
     </div>
+    <div class="data-source">收盘价来源：腾讯财经 | 总股本来源：东方财富数据中心 | 市值=收盘价×总股本</div>
     <p style="font-weight:600;margin:12px 0 6px;font-size:13px;">📰 市场关注</p>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 旗下四川友谊医院、青岛盈海医院入选帕金森病SPARK疗法全国合作医疗机构<br><span class="news-meta">来源：腾讯新闻 | B级</span></div>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 携手华为云签署合作框架协议，共建"预防—筛查—诊断—治疗—康复"全链路肿瘤AI全周期管理平台<br><span class="news-meta">来源：凤凰网/腾讯新闻 | B级</span></div>
-    <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 "智护盈康"APP已推出，华为云病理大模型驱动常见癌种识别精度大幅提升，单切片诊断从分钟级压缩至秒级<br><span class="news-meta">来源：凤凰网 | B级</span></div>
+    <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 "智护盈康"APP已推出，华为云病理大模型驱动常见癌种识别精度大幅提升<br><span class="news-meta">来源：凤凰网 | B级</span></div>
     <p style="font-weight:600;margin:12px 0 6px;font-size:13px;">💡 当前判断</p>
     <div style="font-size:12px;padding:3px 0;">• 与华为云合作标志AI战略进入规模化落地阶段，"技术+场景"双轮驱动模式清晰</div>
     <div style="font-size:12px;padding:3px 0;">• 脑科学布局（pBFS技术+DBS手术）形成从无创到有创的完整技术路径</div>
@@ -237,11 +230,12 @@
     <div class="kpi-grid">
       <div class="kpi-row"><span>收盘价</span><span>¥5.01</span></div>
       <div class="kpi-row"><span>涨跌幅</span><span class="down">-0.99%</span></div>
-      <div class="kpi-row"><span>总市值</span><span>330.06亿</span></div>
+      <div class="kpi-row"><span>总股本</span><span>6,592,672,885股</span></div>
+      <div class="kpi-row"><span>计算市值</span><span>330.29亿</span></div>
       <div class="kpi-row"><span>PE(TTM)</span><span>24.89x</span></div>
-      <div class="kpi-row"><span>总股本</span><span>65.88亿股</span></div>
       <div class="kpi-row"><span>数据日期</span><span>2026-06-10</span></div>
     </div>
+    <div class="data-source">收盘价来源：腾讯财经 | 总股本来源：东方财富数据中心 | 市值=收盘价×总股本</div>
     <p style="font-weight:600;margin:12px 0 6px;font-size:13px;">📰 市场关注</p>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 6月10日大宗交易成交31.04万股，成交价5.50元，相对收盘价溢价9.78%<br><span class="news-meta">来源：凤凰网/数据宝 | B级</span></div>
     <div style="font-size:12px;padding:4px 0;border-bottom:1px dotted #eee;">🆕 近3个月累计发生3笔大宗交易，合计成交1945.97万元<br><span class="news-meta">来源：凤凰网 | B级</span></div>
@@ -255,25 +249,25 @@
   <table>
     <tr><th>公司</th><th>代码</th><th>收盘价</th><th>涨跌幅</th><th>总市值</th><th>PE(TTM)</th><th>信号</th></tr>
     <tr><td>迈瑞医疗</td><td>300760</td><td>¥143.50</td><td class="up">+0.82%</td><td>1738亿</td><td>22.20</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>联影医疗</td><td>688271</td><td>¥110.60</td><td class="down">-1.90%</td><td>911.52亿</td><td>48.02</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>鱼跃医疗</td><td>002223</td><td>¥25.45</td><td class="up">+1.68%</td><td>239.81亿</td><td>19.85</td><td><span class="signal signal-green"></span></td></tr>
+    <tr><td>联影医疗</td><td>688271</td><td>¥110.60</td><td class="down">-1.90%</td><td>912亿</td><td>48.02</td><td><span class="signal signal-yellow"></span></td></tr>
+    <tr><td>鱼跃医疗</td><td>002223</td><td>¥25.45</td><td class="up">+1.68%</td><td>240亿</td><td>19.85</td><td><span class="signal signal-green"></span></td></tr>
     <tr><td>新华医疗</td><td>600587</td><td>¥12.66</td><td class="down">-0.47%</td><td>76.80亿</td><td>15.68</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>爱尔眼科</td><td>300015</td><td>¥8.25</td><td class="flat">0.00%</td><td>656.32亿</td><td>22.82</td><td><span class="signal signal-yellow"></span></td></tr>
+    <tr><td>爱尔眼科</td><td>300015</td><td>¥8.25</td><td class="flat">0.00%</td><td>656亿</td><td>22.82</td><td><span class="signal signal-yellow"></span></td></tr>
     <tr><td>国际医学</td><td>000516</td><td>¥3.93</td><td class="down">-1.50%</td><td>86.23亿</td><td>-34.50</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>通策医疗</td><td>600763</td><td>¥33.77</td><td class="up">+0.90%</td><td>151.05亿</td><td>29.91</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>金域医学</td><td>603882</td><td>¥24.15</td><td class="down">-1.83%</td><td>111.12亿</td><td>-108.97</td><td><span class="signal signal-yellow"></span></td></tr>
-    <tr><td>复星医药</td><td>600196</td><td>¥22.11</td><td class="up">+1.28%</td><td>468.40亿</td><td>16.98</td><td><span class="signal signal-green"></span></td></tr>
+    <tr><td>通策医疗</td><td>600763</td><td>¥33.77</td><td class="up">+0.90%</td><td>151亿</td><td>29.91</td><td><span class="signal signal-yellow"></span></td></tr>
+    <tr><td>金域医学</td><td>603882</td><td>¥24.15</td><td class="down">-1.83%</td><td>111亿</td><td>-108.97</td><td><span class="signal signal-yellow"></span></td></tr>
+    <tr><td>复星医药</td><td>600196</td><td>¥22.11</td><td class="up">+1.28%</td><td>468亿</td><td>16.98</td><td><span class="signal signal-green"></span></td></tr>
   </table>
 </div>
 
-<!-- Module 4: Risk -->
+<!-- Module 4 -->
 <div class="section">
   <div class="section-title">四、品牌声誉与风险预警</div>
   <div class="risk-none">✅ 今日无新增风险事件。品牌声誉整体稳定。</div>
   <p style="font-size:12px;color:var(--text-light);margin-top:8px;">注：国家14部门联合印发的医药纠风工作要点为行业系统性政策，暂未涉及盈康一生旗下公司，持续跟踪中。</p>
 </div>
 
-<!-- Module 5: Trend -->
+<!-- Module 5 -->
 <div class="section">
   <div class="section-title">五、🔮 趋势预判</div>
   <table class="trend-table">
@@ -282,14 +276,14 @@
       <td>AI+医疗成为器械行业核心竞争维度，AI收入占比持续提升</td>
       <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
       <td>短期6-12月</td>
-      <td>海尔生物AI收入占比已达15%、盈康生命联手华为云、迈瑞系整合深化，AI从辅助工具升级为核心产品能力</td>
+      <td>海尔生物AI收入占比已达15%、盈康生命联手华为云、迈瑞系整合深化</td>
       <td>加速AI产品化落地，构建AI收入可量化披露机制</td>
     </tr>
     <tr>
       <td>医疗器械监管持续趋严，合规成本上升</td>
       <td><span class="stars">⭐⭐⭐⭐</span></td>
       <td>中期1-2年</td>
-      <td>药监局密集发布检查指导原则、江西省出台经营监管细则，行业门槛提升利好头部企业</td>
+      <td>药监局密集发布检查指导原则，行业门槛提升利好头部企业</td>
       <td>提前完善质量管理体系，将合规能力转化为竞争优势</td>
     </tr>
     <tr>
@@ -303,22 +297,23 @@
       <td>脑科学/脑机接口成为医疗服务新增长极</td>
       <td><span class="stars">⭐⭐⭐</span></td>
       <td>中长期2-3年</td>
-      <td>盈康生命布局pBFS无创调控+DBS精准手术双路径，四川友谊医院成西南pBFS临床基地</td>
+      <td>盈康生命布局pBFS无创调控+DBS精准手术双路径</td>
       <td>持续投入脑科学临床研究，积累数据壁垒和专家网络</td>
     </tr>
     <tr>
       <td>家电巨头全球化2.0：从产品出海到技术+模式出海</td>
       <td><span class="stars">⭐⭐⭐⭐</span></td>
       <td>短期6-12月</td>
-      <td>美的"出海合伙人计划"、海尔智家海外OBM增长引擎，集团级竞对全球化加速</td>
+      <td>美的"出海合伙人计划"、海尔智家海外OBM增长引擎</td>
       <td>关注集团全球化战略对医疗板块出海资源协同的可能性</td>
     </tr>
   </table>
 </div>
 
 <div class="footer">
-  数据截至2026-06-10收盘 | 来源：腾讯财经、东方财富、Bocha搜索 | 仅供参考，不构成投资建议<br>
-  本报告由AI自动生成，信息准确性以官方公告为准
+  数据截至2026-06-10收盘<br>
+  收盘价/PE来源：腾讯财经(qt.gtimg.cn) | 总股本来源：东方财富数据中心(datacenter-web.eastmoney.com)<br>
+  市值 = 收盘价 × 总股本（自行计算）| 仅供参考，不构成投资建议
 </div>
 
 </div>
